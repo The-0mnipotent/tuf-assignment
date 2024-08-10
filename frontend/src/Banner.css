@@ -1,0 +1,73 @@
+.banner {
+  background-color: #ff6347;
+  color: white;
+  padding: 30px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  position: relative;
+  animation: slideIn 0.5s ease-out;
+}
+
+.banner-title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.timer-container {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.timer-icon {
+  font-size: 2rem;
+  margin-right: 10px;
+  animation: spin 1s linear infinite;
+}
+
+.banner-link-container {
+  margin-top: 15px;
+}
+
+.banner-link {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 2px solid white;
+}
+
+.banner-link:hover {
+  color: yellow;
+  border-color: yellow;
+}
+
+.warning {
+  animation: pulse 1s infinite;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #ff6347;
+  }
+  50% {
+    background-color: #ff4500;
+  }
+  100% {
+    background-color: #ff6347;
+  }
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
